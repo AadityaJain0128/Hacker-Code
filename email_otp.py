@@ -17,7 +17,7 @@ def send_otp(to, otp):
         # Sending Email using smtplib
         # Port 465: This port was previously used for Secure SMTP (SMTPS). It has now been deprecated by the Internet Engineering Task Force (IETF)
         with smtplib.SMTP_SSL("smtp.gmail.com", port=465, context=context) as smtp:
-            smtp.login("aadityajain010203@gmail.com", "ustnrjbkusdszvds")
+            smtp.login("aadityajain010203@gmail.com", "xyz")
             smtp.sendmail("aadityajain010203@gmail.com", to, emailObj.as_string())
 
         return True
